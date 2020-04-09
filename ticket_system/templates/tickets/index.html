@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for av_request in av_requests %}
+           <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ av_request.requester }}</a>
+              <small class="text-muted">{{ av_request.date_requested }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ av_request.title }}</a></h2>
+            <p class="article-content">{{ av_request.content }}</p>
+            <p class="article-status">{{ av_request.status }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card text-center">
+  <div class="card-body">
+    <h1>Welcome To GCUAVS Ticket System</h1>
+    <p>Login or register to make/view  a request</p>
+    <a class="btn btn-dark" href="{% url 'tickets:index' %}">
+        View Tickets</a>
+    <a class="btn btn-dark" href="{% url 'tickets:index' %}">
+        Make an AV Request</a>
+  </div>
+  </div>
+{% endblock %}

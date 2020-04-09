@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{% trans "View a Ticket" %}</h2>
+
+<fieldset>
+    <dl>
+        <dt><label for='id_ticket'>{% trans "Ticket" %}</label></dt>
+        <dd><input type='text' name='ticket' /></dd>
+
+        <dt><label for='id_email'>{% trans "Your E-mail Address" %}</label></dt>
+        <dd><input type='text' name='email' /></dd>
+    </dl>
+
+    <input class="btn btn-primary" type='submit' value='{% trans "View Ticket" %}' />
+</fieldset>
+
+{% endblock  content%}
